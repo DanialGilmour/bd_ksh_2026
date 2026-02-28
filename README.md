@@ -1,0 +1,1 @@
+"# myoso-static-page" 
