@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#1a1033">
+  <title>Happy Birthday! 🎉</title>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,500;1,700&family=Quicksand:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body data-theme="classic">
+  <!-- Decorative night sky -->
+  <div class="sky" aria-hidden="true">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  <button id="playPauseButton" class="play-pause" type="button" aria-label="Play or pause music"></button>
+  <button id="themeToggleButton" class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme">🌙</button>
+
+  <div id="balloonScoreboard" class="balloon-scoreboard" aria-live="polite" hidden>
+    🎈 <span id="balloonScore">0</span> popped
+  </div>
+
+  <!-- Intro / start screen -->
+  <div class="startSign">
+    <div class="gift" aria-hidden="true">
+      <div class="gift-lid">
+        <span class="gift-bow"></span>
+      </div>
+      <div class="gift-box"></div>
+    </div>
+    <h2 class="start-title" data-node-name="startTitle">I made you a little something…</h2>
+    <p class="start-hint" data-node-name="startHint">🎧 Put on your headphones and turn the sound up for the best experience.</p>
+    <p class="start-status" data-status aria-live="polite"></p>
+    <!-- Start button -->
+    <button id="startButton" class="button" type="button" data-node-name="startButtonLabel">Open your surprise</button>
+  </div>
+
+  <div class="container">
+    <div class="one">
+      <h1 class="one">
+        <span class="greeting" data-node-name="greeting">Hey</span>
+        <span class="name" data-node-name="name">you</span>
+      </h1>
+      <p class="two" data-node-name="greetingText">I really like your name btw!</p>
+    </div>
+    <div class="three">
+      <p data-node-name="text1">It's your birthday!!! :D</p>
+    </div>
+    <div class="four">
+      <div class="text-box">
+        <div class="chat-header" aria-hidden="true">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="chat-title">New message</span>
+        </div>
+        <p class="hbd-chatbox" data-node-name="textInChatBox">Happy birthday to you!! Yeee! Many many happy blah...</p>
+        <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
+      </div>
+    </div>
+    <div class="five">
+      <p class="idea-1" data-node-name="text2">That's what I was going to do.</p>
+      <p class="idea-2" data-node-name="text3">But then I stopped.</p>
+      <p class="idea-3">
+        <span data-node-name="text4">I realised, I wanted to do something</span>
+        <strong data-node-name="text4Adjective">special</strong>.
+      </p>
+      <p class="idea-4" data-node-name="text5Entry">Because,</p>
+      <p class="idea-5">
+        <span data-node-name="text5Content">You are Special</span>
+        <span class="smiley" data-node-name="smiley">:)</span>
+      </p>
+      <p class="idea-6">
+        <span data-node-name="bigTextPart1">S</span>
+        <span data-node-name="bigTextPart2">O</span>
+      </p>
+    </div>
+    <div class="six">
+      <div class="wish">
+        <h3 class="wish-hbd" data-node-name="wishHeading">Barakallahu Fi Umrik!</h3>
+        <h5 data-node-name="wishText">May Allah bless your new age with endless barakah, sakinah, and happiness in Dunya &amp; Akhirah.</h5>
+        <p class="scroll-hint" data-node-name="galleryHint">↓ Scroll down through the memories ↓</p>
+      </div>
+      <div id="polaroidWall" class="polaroid-wall" aria-label="Blessed photo memories">
+        <article class="photo-frame polaroid-card hero-polaroid" style="--tilt: -4deg; --offset-x: -14px;">
+          <span class="polaroid-tape" aria-hidden="true"></span>
+          <img src="img/1.JPG" alt="Blessed memory" class="lydia-dp" data-node-name="imagePath">
+          <span class="polaroid-sticker" aria-hidden="true">🌙</span>
+          <p class="photo-caption" data-node-name="photoCaption"></p>
+        </article>
+      </div>
+      <div class="six-actions">
+        <button id="continueToCakeButton" class="pill-btn accent" type="button" data-node-name="continueButtonLabel">🌙 Send a Du'a &amp; Blessing &rarr;</button>
+      </div>
+    </div>
+    <div class="seven">
+      <div class="baloons">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon2.svg" alt="">
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+      </div>
+    </div>
+    <div class="eight">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+    </div>
+    <div class="nine">
+      <div class="cake-stage lantern-stage">
+        <div id="duaLantern" class="dua-lantern" role="button" tabindex="0" aria-label="Illuminate the Du'a lantern and say Aamiin">
+          <div class="lantern-hanger"></div>
+          <div class="lantern-dome">
+            <span class="lantern-crescent" aria-hidden="true">☪</span>
+          </div>
+          <div class="lantern-body">
+            <span class="lantern-glow"></span>
+            <span class="lantern-star" aria-hidden="true">✧</span>
+          </div>
+          <div class="lantern-base"></div>
+        </div>
+        <p id="cakePrompt" class="cake-prompt" data-node-name="cakePrompt">🏮 Click the lantern above to illuminate it with Noor &amp; reveal your secret Du'a letter!</p>
+        <div class="cake-actions">
+          <button id="openLetterButton" class="pill-btn accent" type="button" data-node-name="letterButtonLabel" hidden>💌 Open Secret Du'a Letter</button>
+          <button id="relightButton" class="pill-btn" type="button" hidden>🌙 Dim Lantern</button>
+        </div>
+      </div>
+      <p data-node-name="outroText">JazakAllah Khair — I hope this little surprise brought a smile to your heart.</p>
+      <p id="replay" role="button" tabindex="0" data-node-name="replayText">Tap here to replay from the beginning, InshaAllah</p>
+      <p class="last-smile" data-node-name="outroSmiley">:)</p>
+    </div>
+  </div>
+
+  <!-- Secret Du'a & Blessing Letter Modal -->
+  <div id="letterModal" class="letter-modal" role="dialog" aria-modal="true" aria-labelledby="letterHeading" hidden>
+    <div class="letter-backdrop" data-close-letter></div>
+    <div class="letter-card">
+      <button class="letter-close" type="button" aria-label="Close letter" data-close-letter>&times;</button>
+      <div class="letter-seal" aria-hidden="true">🌙</div>
+      <p class="letter-bismillah" aria-hidden="true">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <h3 id="letterHeading" class="letter-heading" data-node-name="letterTitle">A Heartfelt Du'a For You</h3>
+      <p class="letter-body" data-node-name="letterBody">Alhamdulillah for another year of your life. I pray that Allah (SWT) grants you health, steadfastness in Iman, endless barakah in your rizq, and surrounds you with people who love you for His sake. May He answer every silent Du'a in your heart and grant you the highest level of Jannah. Aamiin Ya Rabbal 'Alamin.</p>
+      <p class="letter-signoff" data-node-name="letterSignoff">Fi Amanillah &amp; warmest Du'as 🤲✨</p>
+    </div>
+  </div>
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+</body>
+</html>
